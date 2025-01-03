@@ -12,7 +12,8 @@ on:
   # Run this workflow once every 6 hours against the master branch
   #schedule:
   # - cron: "0 */6 * * *"
-
+  workflow_dispatch:
+  
   push:
     branches:
       - "*"
