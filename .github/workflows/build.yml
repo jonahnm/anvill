@@ -56,8 +56,7 @@ jobs:
         llvm: ["17"]
         cxxcommon_version: ["v0.6.0"]
 
-    runs-on:
-      labels: gha-ubuntu-32
+    
     container:
       image: docker.pkg.github.com/lifting-bits/cxx-common/vcpkg-builder-${{ matrix.image.name }}:${{ matrix.image.tag }}
 
